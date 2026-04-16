@@ -1,19 +1,18 @@
 // University of Arkansas at Little Rock
 // Department of Computer Science
 // CPSI 28003: Algorithms
-// Fall 2026
+// Spring 2026
 // Project 2: Infix to Postfix Conversion, Bonus: Evaluate the arithmetic expressions for
 // the results. This program is not menu-driven.
 // Due Date: April 23, 2026
 // Name:
-// ID-number (Last 4 Digits):
+// ID-number (Last 4 Digits): 9995
 // Description of the Program (2-3 sentences):
 //   This program reads infix arithmetic expressions from the user and converts
-//   them to postfix (Reverse Polish Notation) using a stack-based shunting-yard
-//   algorithm. The bonus Evaluate function computes the integer result of the
-//   postfix expression using a second stack.
-// Date Written:
-// Date Revised:
+//  them to postfix using a stack-based shunting-yard algorithm.
+//   After converting to postfix, the program evaluates the expression for the final result.
+// Date Written: 4/13/2026
+// Date Revised: 4/15/2026
 
 #include <iostream>
 #include <string>
@@ -73,7 +72,7 @@ bool isOperator(const string& token)
 }
 
 //InfixToPostfix
-//  Implements the shunting-yard algorithm to convert infix expressions to postfix.
+//  Uses shunting-yard algorithm to convert infix expressions to postfix.
 //  Operands are added directly to the output string.
 //  Operators are pushed onto the stack
 //  When an operator is encountered, operators with higher or equal precedence are popped from the stack to the output 
